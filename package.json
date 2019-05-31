@@ -5,15 +5,18 @@
   "dependencies": {
     "clarifai": "^2.9.0",
     "gh-pages": "^2.0.1",
+    "homepage": "https://wunderkind6089.github.io/smartbrain/",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-particles-js": "^2.6.0",
     "react-scripts": "2.1.8",
     "react-tilt": "^0.1.4",
-    "tachyons": "^4.11.1"
+    "tachyons": "^4.11.1",
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
